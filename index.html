@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Porfolio Web Full Stack Developer</title>
+    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    	glyphicon glyphicon-console-->
+</head>
+
+<body>
+    <header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mat-card" id="first-card">
+                        <!--<div class="btn-edit"><a class="btn-edit" href="#"><i class='bx bxs-edit-alt' ></i></a></div>
+                        <p id="yoprogramo"><b>#Yo Programo</b></p>-->
+                        <img style="display: block;user-select: none;margin: left;cursor: zoom-in;transition: background-color 300ms;" class="img-fluid" src="images/APLogo.png" alt="logo Argentina Programa" width="180" height="120">
+                        <!--Urbani Extra Bold-->
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/in/ruth-sordi%C3%A1n-721a0a3b"><i class='bx bxl-linkedin' ></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/ruthsordian?tab=repositories"><i class='bx bxl-github' ></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/ruthy.sordian/"><i class='bx bxl-instagram'></i></a>
+                            </li>
+                            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+                            <div id="id01" class="modal">
+
+                                <form class="modal-content animate" action="/action_page.php" method="post">
+                                    <div class="imgcontainer">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    </div>
+
+                                    <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button type="submit" style="width:auto;"><b>Login</b></button>
+                                        <label>
+                                           <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <div class="container" style="background-color:#f1f1f1">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </ul>
+                        <div id="profile-background">
+                            <img src="images/banner.jpg">
+                        </div>
+                        <div id="info" style="padding:10px">
+                            <img class="profile-image" src="images/fotoPerfil.jpeg.jpg"><img>
+                            <div class="btn-edit"><a class="btn-edit" href="#"><i class='bx bxs-edit-alt' ></i></a></div>
+                            <h1>Ruth Sordián</h1>
+                            <h2>Desarrollador Web Full Stack Jr.</h2>
+                        </div>
+                        <!-- <div id="info-data">
+                    <div>
+                        <h1>R u t h   S o r d i á n</h1>
+                        <div id="info-company">Desarrollador Web Full Stack</div>
+                    </div>
+                </div>
+                <div id="info-action">
+                    <button type="button" class="btn btn-primary">Tengo interes en</button>
+                    <button type="button" class="btn btn-light">Añadir sección</button>
+                    <button type="button" class="btn btn-secondary">Más</button>
+                </div>
+            </div>-->
+                    </div>
+                </div>
+            </div>
+    </header>
+    <section class="acerca-de">
+        <div class="card mat-card">
+            <div class=row>
+                <div class="col-md-3">
+                    <h4>Acerca de mi</h4>
+                </div>
+                <div class="col-md-9">
+                    <!---   <div class="btn-edit" onclick="cambiar_parrafo()">-->
+                    <div class="btn-edit"><a class="btn-edit" href="#"><i class='bx bxs-edit-alt' ></i></a></div>
+                    <p id="acercade">
+                        <p>Todavia no se que decir de mi jaja. Quiero trabajar porque me gusta trabajar, porque me ayuda a crecer como persona y como profesional, aportando al progreso empresarial en equipo desde el lugar que me toque.</p>
+                        <!-- <div>
+                                <input id="edit-acercade" oninput="miFunction(this.value)" style="display:none" type="text"></input>
+                            </div>-->
+                </div>
+            </div>
+    </section>
+    <section class="experiencia">
+        <div class="card mat-card">
+            <div class=row>
+                <div class="col-md-3">
+                    <h4>Experiencia</h4>
+                </div>
+                <div class="col-md-9">
+                    <div class="btn-edit"><a class="btn-edit" href="#"><i class='bx bxs-edit-alt' ></i><i class='bx bx-trash' ></i></a></div>
+                    <ul>
+                        <li id="empresa">
+                            <h6>Centro de Interacción Multimedia Apex(Call Center) Cuenta CLARO</h6>
+                            <p>Enero 2009 - Septiembre 2017 (Córdoba Cap., Argentina)</p>
+                            <p>Representante de Atención al Cliente, Soporte Técnico cuenta CLARO</p>
+                            <p>Atención vía telefónica e email al cliente masivo y corporativo de Argentina, Uruguay y Paraguay, brindando asesoramiento y soporte técnico sobre los servicios de telefonía móvil e internet realizando la verificación de los
+                                servicios con el cliente y desde los sistemas de la empresa, ingreso y modificación de datos en planillas y sistemas, reclamos y derivaciónes a las áreas pertinentes para la solución de determinados inconvenientes con el
+                                fin de satisfacer las necesidades del cliente y cumplir con las métricas de trabajo propuestas por la empresa tanto individuales como en el team de trabajo </p>
+                        </li>
+                        <li>
+                            <h6>Casa Dorita</h6>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <h6>Aserradero El Bosque</h6> Marzo 1999 - Febrero 2000 (Asunción y Gral Resquin, Paraguay) Administrativa Administración, conciliaciones bancarias, trámites bancarios y financieros, pago a proveedores, cobro clientes, contrál
+                                stock mercadería, trámites despachos aduaneros.</p>
+                        </li>
+                        <li>
+                            <p>
+                                <h6>Clínica El Buen Samaritano AME</h6> Enero 1995 - Enero 1996 (Cap Fed. Bs As, Argentina) Recepcionista y Atención al público Atención al público, atención de conmutador central y líneas telefónicas, prefacturación, manejo
+                                nomenclador, trámites de admisión y caja.</p>
+                        </li>
+                    </ul>
+                </div>
+    </section>
+    <section class="educacion">
+        <div class="card mat-card">
+            <div class=row>
+                <div class="col-md-3">
+                    <h4>Educación</h4>
+                </div>
+                <div class="col-md-9">
+                    <div class="btn-edit"><a class="btn-edit" href="#"><i class='bx bxs-edit-alt' ><i class='bx bx-trash' ></i></i></a></div>
+                    <p>
+                        <h6>Universidad Nacional de Córdoba</h6> 2001-2004 Técnico de Laboratorio Clínico e Histopatológico Instituto William C. Morris Cap Fed Bs As 1990-1994 Perito Mercantil Nivel Secundario Argrntina Programa Diciembre 2021 Primer Etapa
+                        Certidicado
+                    </p>
+                </div>
+    </section>
+
+    <section class="skill">
+        <div class="card mat-card">
+            <div class=row>
+                <div class="col-md-3">
+                    <h4>Skills</h4>
+                </div>
+                <div class="col-md-9">
+                    <div class="btn-edit"><a class="btn-edit" href="#"><i class='bx bxs-edit-alt' ><i class='bx bx-trash' ></i></i></a></div>
+                    <p>
+                        <h6>Soft Skills</h6> Buena Comunicación Vocación de Servicio Trabajo en equipo Manejo herramientas Paquete Office Sólida ética laboral</p>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%">HTML</div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">CSS</div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">Bootstrap</div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%">Javascript</div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">Java</div>
+                    </div>
+
+
+                </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class:></div>
+            <div class="row">
+                <div class="col-md-12">
+                    Dentro del footer va el copyright y otras cosas mas
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
