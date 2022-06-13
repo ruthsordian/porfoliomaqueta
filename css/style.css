@@ -31,9 +31,9 @@
     margin-top: 10px;
     margin-left: 0.5px;
     margin-right: 0.5px;
-    background-color: rgb(83, 95, 116);
-    background-image: linear-gradient(to right, rgb(83, 95, 116), rgb(52, 198, 198));
-    /*background-color: rgb(18, 11, 116);
+    background-color: rgb(26, 26, 34);
+    background-image: linear-gradient(to right, rgb(26, 26, 34), rgb(17, 238, 238));
+    /*background-color: rgb(18, 11, 116);   rgb(29, 70, 139)  rgb(22, 18, 78)
     /* For browsers that do not support gradients */
     /* background-image: linear-gradient(to right, rgb(18, 11, 116), rgb(97, 245, 245));**/
 }
@@ -98,6 +98,11 @@ body {
 h1 {
     color: white;
     text-align: center
+}
+
+h2#position {
+    color: white;
+    text-align: center;
 }
 
 #info-company {
