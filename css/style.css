@@ -1,64 +1,90 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0%;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.container-fluid {
-    margin: auto;
+.container-flex {
+    display: flex;
 }
 
 .mat-card {
-    margin: 10px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    padding: 20px;
-    /* box-shadow: 2px 2px 4px #000000;*/
+    margin: 0%;
+    padding-top: 0%;
+    background-color: rgb(45, 83, 96);
+    color: white;
+    /*box-shadow: 2px 2px 4px #000000;*/
 }
 
 
 /* border-color: rgb(164, 164, 168);*/
 
 .mat-card#first-card {
-    padding: 0;
+    margin: 0%;
+    background-color: rgb(45, 83, 96);
+    /*padding: 0;
     margin-bottom: 0.5px;
     margin-top: 10px;
-    border-color: rgb(53, 53, 58);
+    border-color: rgb(53, 53, 58);*/
+}
+
+div.seccion {
+    background-color: rgb(45, 83, 96);
 }
 
 #first-card {
     display: flex;
-    margin-top: 10px;
-    margin-left: 0.5px;
-    margin-right: 0.5px;
-    background-color: rgb(26, 26, 34);
-    background-image: linear-gradient(to right, rgb(26, 26, 34), rgb(17, 238, 238));
+    margin: 0%;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    background-color: rgb(45, 83, 96);
+    /* background-image: linear-gradient(to right, rgb(54, 76, 95), rgb(17, 238, 238));
+    /* background-image: linear-gradient(to right, rgb(59, 95, 117), rgb(17, 238, 238));rgb(27, 51, 71)
     /*background-color: rgb(18, 11, 116);   rgb(29, 70, 139)  rgb(22, 18, 78)
     /* For browsers that do not support gradients */
     /* background-image: linear-gradient(to right, rgb(18, 11, 116), rgb(97, 245, 245));**/
 }
 
+.navbar-toggler-icon {
+    color: white;
+}
+
 div#profile-background {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 div#profile-background img {
-    width: 100%;
-    height: 400px;
+    width: 100vw;
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
 }
 
 .profile-image {
     width: 11%;
     border-radius: 50%;
     margin-top: -120px;
-    margin-left: 50px;
+    margin-left: 70px;
     z-index: 1;
-    box-shadow: 2px 2px 4px #000000;
+    box-shadow: 2px 2px 4px #2c2b2b;
 }
 
 div#info-action {
     display: flex;
+    margin-top: 0;
+    width: fit-content;
+}
+
+.col-sm-3 {
+    margin-top: 0;
+}
+
+.col-sm-9 {
+    margin-top: 2%;
 }
 
 .card {
@@ -66,20 +92,19 @@ div#info-action {
     display: flex;
     flex-direction: column;
     min-width: 0;
-    background-color: white;
     background-clip: border-box;
 }
 
 .button {
-    border-color: rgb(31, 31, 58);
+    border-color: rgb(45, 83, 96);
 }
 
 .fa solid {
-    color: black;
+    color: rgb(45, 83, 96);
 }
 
 body {
-    background-color: rgb(78 73 70);
+    background-color: rgb(45, 83, 96);
 }
 
 .nav {
@@ -89,81 +114,131 @@ body {
 .nav-link {
     position: relative;
     float: right;
-    top: -105px;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-right: 20px;
+    margin-top: 15px;
 }
 
-h1 {
+.section {
+    /*background-color: rgb(14, 54, 68);*/
+    color: lightgray;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+h2 {
     color: white;
-    text-align: center
+    text-align: center;
+    transform: translate(5%, 0%);
+    font-family: sans-serif;
+    font-size: 3em;
+    padding-top: 0%;
+    position: absolute;
+    top: 250px;
+    left: 200px;
 }
 
 h2#position {
-    color: white;
+    color: rgb(45, 83, 96);
     text-align: center;
 }
 
 #info-company {
-    color: white;
+    color: rgb(45, 83, 96);
     text-align: center;
     font-size: xx-large;
 }
 
 h4 {
-    color: rgb(52, 198, 198);
+    color: whitesmoke;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 p {
-    font-family: ' Verdana', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     margin-top: 30px;
     margin-right: 40px;
     font-size: 16px;
+    color: whitesmoke;
 }
 
 li {
     list-style-type: none;
 }
 
+.shadow li {
+    padding: 2.5%;
+    margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+.bxs-edit-alt {
+    color: white;
+}
+
 .img-fluid {
     display: flex;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 60px;
+    margin-right: 0%;
+    width: 150px;
+    height: 50px;
 }
 
 #yoprogramo {
     position: relative;
     color: white;
-    font-size: medium;
+    font-size: small;
     font-family: sans-serif;
-    width: 120px;
-    height: 20px;
-    margin-left: 230px;
-    top: -100px;
+    width: 100px;
+    height: 18px;
 }
 
 .btn-edit {
     position: relative;
     float: right;
     margin-right: 7px;
-    color: black;
+    color: rgb(45, 83, 96);
     font-size: 1.5rem;
 }
 
-footer {
-    margin-left: 0.5px;
-    margin-right: 0.5px;
-    background-color: rgb(84, 124, 194);
-    /*rgb(83, 95, 116rgb(95, 123, 173)*/
-    background-image: linear-gradient(to right, rgb(84, 124, 194), rgb(52, 198, 198));
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.text {
+    white-space: nowrap;
+    width: 29ch;
+    overflow: hidden;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    color: #fff;
+    animation: texto 3s steps(29);
+    display: flex;
+    position: absolut;
+    margin-left: 10rem;
+    transform: translate(0%, -500%);
+}
+
+@keyframes texto {
+    0% {
+        width: 0
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
 }
 
 input[type=text],
-input[type=password] {
+input[type=contraseña] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -173,20 +248,34 @@ input[type=password] {
 }
 
 
-/* Set a style for all buttons */
+/* 
+* {
+    font-family: 'Poppins', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;   
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#0763b9,#00478a);
+    display: grid;
+    place-items: center;   
+}Set a style for all buttons */
 
 button {
-    background-color: rgb(50, 175, 175);
+    background-color: rgb(17, 72, 88);
     color: white;
-    border-radius: 20%;
-    padding: 14px 20px;
-    margin: 8px 0;
+    border-radius: 10%;
+    padding: 10px 18px;
+    margin: 2px 0;
     border: none;
     cursor: pointer;
     width: 100%;
     position: relative;
     float: right;
-    top: -112px;
+    margin-right: 5%;
 }
 
 button:hover {
@@ -199,7 +288,8 @@ button:hover {
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    margin-right: 8%;
+    background-color: rgb(114, 1, 7);
 }
 
 
@@ -212,12 +302,13 @@ button:hover {
 }
 
 .container {
-    padding: 16px;
+    padding: 3%;
 }
 
-span.psw {
+span.password {
     float: right;
     padding-top: 16px;
+    margin-right: 10%;
 }
 
 
@@ -230,7 +321,6 @@ span.psw {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    left: 0;
     top: 0;
     width: 100%;
     /* Full width */
@@ -245,38 +335,32 @@ span.psw {
     padding-top: 60px;
 }
 
-
-/* Modal Content/Box */
-
 .modal-content {
-    background-color: #fefefe;
+    background-color: rgb(242, 244, 255);
     margin: 5% auto 15% auto;
-    /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 40%;
-    /* Could be more or less, depending on screen size */
+    top: 15%;
+    border: 1px solid rgb(45, 83, 96);
+    width: 35%;
 }
-
-
-/* The Close Button (x) */
 
 .close {
     position: absolute;
     right: 25px;
+    margin-left: 5%;
     top: 0;
-    color: #000;
+    color: rgb(45, 83, 96);
     font-size: 35px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: red;
+    color: rgb(45, 83, 96);
     cursor: pointer;
 }
 
 
-/* Add Zoom Animation */
+/*Animacion*/
 
 .animate {
     -webkit-animation: animatezoom 0.6s;
@@ -302,21 +386,70 @@ span.psw {
 }
 
 
-/* Change styles for span and cancel button on extra small screens */
+/* cambio */
 
 @media screen and (max-width: 300px) {
-    span.psw {
+    span.password {
         display: block;
         float: none;
+        margin-left: 10%;
     }
     .cancelbtn {
-        width: 100%;
+        width: 90%;
     }
 }
 
+h5 h6 {
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
 
-/*
-.mat-card#first-card
-display:block;
- width: 120px;
-    height: 20px;
+.logoEmpleo {
+    margin-left: 20%;
+    margin-top: 10%;
+    display: flex;
+    width: 180px;
+    height: 130px;
+}
+
+.logoEstudio {
+    margin-left: 20%;
+    margin-top: 10%;
+    display: flex;
+    width: 180px;
+    height: 130px;
+    padding-bottom: 3%;
+}
+
+.logoSkill {
+    margin-left: 40%;
+    margin-top: 10%;
+    display: flex;
+    width: 100px;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    background-color: rgb(45, 83, 96);
+    ;
+}
+
+#text-acercade {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#copyright {
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+/*  background-image: linear-gradient(to right, rgb(26, 26, 34), rgb(17, 238, 238))
+/*  background-image: linear-gradient(to right, rgb(26, 26, 34), rgb(17, 238, 238))

@@ -1,6 +1,6 @@
 function cambiar_parrafo() {
     document.getElementById("edit-acecade").style.display = "block";
-    let text = document.getElementById("text-acercade").innerText;
+    let texto = document.getElementById("text-acercade").innerText;
     console.log(texto);
 };
 
@@ -44,9 +44,9 @@ window.onclick = function(event) {
 }
 
 
-var i = 0;
-var txt = 'Full Stack Developer'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+let i = 0;
+let txt = 'Full Stack Developer'; /* The text */
+let speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
     if (i < txt.length) {
