@@ -12,99 +12,105 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid"></div>
-        <nav class="navbar navbar-expand-sm navbar-light">
-            <div class="container-fluid">
-                <img class="navbar-brand" src="images/APLogo.png" alt="logo Argentina Programa" width="150" height="90"><span id="yoprogramo"><b>#Yo Programo</b></span>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacion justify-content-end">
+    <div class="container-fluid">
+        <header id="header">
+            <!--<nav class="navbar navbar-expand-sm navbar-light">-->
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <img class="navbar-brand" src="images/APLogo.png" alt="logo Argentina Programa" width="150" height="90"><span id="yoprogramo"><b>#Yo Programo</b></span>
+                    <!--<button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#menu-navegacion justify-content-end" aria-expanded="true">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse justify-content-end" id="menu-navegacion">
-                    <ul class="navbar-nav ms-5">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/ruth-sordi%C3%A1n-721a0a3b"><i class='bx bxl-linkedin' ></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/ruthsordian?tab=repositories"><i class='bx bxl-github' ></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/ruthy.sordian/"><i class='bx bxl-instagram'></i></a>
-                        </li>
-                    </ul>
-                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Login</b></button>
-                    <div id="id01" class="modal">
+                    </button>-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="menu-navegacion">
+                        <ul class="navbar-nav ms-5" id="redescontacto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.linkedin.com/in/ruth-sordi%C3%A1n-721a0a3b"><i class='bx bxl-linkedin'></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/ruthsordian?tab=repositories"><i class='bx bxl-github'></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/ruthy.sordian/"><i class='bx bxl-instagram'></i></a>
+                            </li>
+                        </ul>
+                        <button id="loguin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Login</b></button>
+                        <div id="id01" class="modal">
 
-                        <form class="modal-content animate" action="/action_page.php" method="post">
-                            <div class="imgcontainer">
-                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            </div>
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                </div>
 
-                            <div class="container">
-                                <label for="uname"><b>Usuario</b></label>
-                                <input type="text" placeholder="Ingrese nombre de usuario" name="uname" required>
+                                <div class="flex-wrap">
+                                    <label for="uname"><b>Usuario</b></label>
+                                    <input type="text" placeholder="Ingrese nombre de usuario" name="uname" required>
 
-                                <label for="password"><b>Contraseña</b></label>
-                                <input type="contraseña" placeholder="Ingrese contraseña" name="password" required>
+                                    <label for="password"><b>Contraseña</b></label>
+                                    <input type="contraseña" placeholder="Ingrese contraseña" name="password" required>
 
-                                <button type="submit" style="width:auto;"><b>Login</b></button>
-                                <label>
+                                    <button type="submit" style="width:auto;"><b>Login</b></button>
+                                    <label>
                                            <input type="checkbox" checked="checked" name="remember"> Recordarme
                                         </label>
-                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-                                <span class="password">Olvide mi <a href="#"> contraseña</a></span>
-                            </div>
-                        </form>
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                                    <span class="password">Olvide mi <a href="#"> contraseña</a></span>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </nav>
-        <div id="profile-background">
-            <img src="images/banner3.jpg">
-        </div>
-        <div id="info">
-            <img class="profile-image" src="images/fotoPerfil.jpeg.jpg"><img>
+    </div>
+    </nav>
+    <div id="profile-background">
+        <img src="images/banner3.jpg">
+    </div>
+    <div id="info">
+        <div class="btn-edit"><a class="btn-edit" href="#header"><i class='bx bxs-edit-alt'></i></a></div>
+        <div class="align-self-start">
+            <img id="profile-image" src="images/fotoPerfil.jpeg.jpg"><img>
             <a class="section shadow" href="#experiencia">Experiencia</a>
             <a class="section shadow" href="#educacion">Educación</a>
             <a class="section shadow" href="#skills">Skills</a>
             <a class="section shadow" href="#proyectos">Proyectos</a>
             <a class="section shadow" href="#contacto">Contacto</a>
-            <div class="btn-edit"><a class="btn-edit" href="#"><i class='bx bxs-edit-alt'></i></a></div>
-            <h2><b>RUTH SORDIÁN</b></h2>
-            <div class="text">Desarrolladora Web Full Stack Jr.</div>
         </div>
+        <h2><b>RUTH SORDIÁN</b></h2>
+        <div class="text">Desarrolladora Web Full Stack Jr.</div>
+    </div>
     </header>
-    <section class="acerca-de">
+    <section id="acerca-de">
         <div class="card mat-card shadow">
-            <div class=row>
-                <div class="col-sm-12">
-                    <div class="btn-edit "><a class="btn-edit " href="# "><i class='bx bxs-edit-alt' ></i><i class='bx bx-trash' ></i></a></div>
-                    <span><h4>Acerca de mi</h4></span>
-                    <!--<div class="btn-edit" onclick="cambiar_parrafo()">
-                        <a class="btn-edit" href="#onclick=cambiar parrafo()">
-                            <i class='bx bxs-edit-alt'></i>
-                        </a>
-                    </div>-->
-                    <p id="text-acercade">
-                        Me interesa la tecnología y sus multiples facetas, lo que me llevó desde la tecnología en el área de la salud a la informática y las miles de soluciones que se pueden brindar desde la programación.
-                        <input id="edit-acercade" type="text" oninput="miFunction(this.value)" style="display:none"></input>
+            <div class="col-sm-12">
+                <div class="btn-edit" onclick="cambiar_parrafo()">
+                    <a href="#" id="bx bxs-edit-alt"><i class='bx bxs-edit-alt'></i></a>
+                </div>
+                <!--<i class='bx bx-trash'></i>-->
+                <h4>Acerca de mi</h4>
+                <div>
+                    <p id="text-acercade">Me interesa la tecnología y sus multiples facetas, lo que me llevó desde la tecnología en el área de la salud a la informática y las miles de soluciones que se pueden brindar desde la programación.</p>
+                </div>
+                <div>
+                    <input id="edit-acercade" type="text" oninput="myFunction(this.valor)" style="display:none"></input>
                 </div>
             </div>
         </div>
+        <input type="file" id="file" onchange="showFile(this)">
         <!--https://getbootstrap.com/docs/5.2/layout/grid/-->
     </section>
     <section id="experiencia">
-        <div class="card mat-card shadow">
+        <div class="card mat-card">
             <div class="row">
-                <div class="col-sm-12 ">
-                    <div class="btn-edit "><a class="btn-edit " href="# "><i class='bx bxs-edit-alt' ></i><i class='bx bx-trash' ></i></a></div>
-                    <h4>Experiencia</h4>
-                </div>
+                <div class="btn-edit "><a class="btn-edit " href="#experiencia"><i class='bx bxs-edit-alt' ></i><i class='bx bx-trash' ></i></a></div>
+                <h4>Experiencia</h4>
+            </div>
+            <div class="d-flex align-items-stretch">
                 <div class="col-sm-3">
                     <a style="margin-left:40% " href="https://apexamerica.com/"><img class="logoEmpleo" src="images/Logos/Apex.png" alt="logo Apex"></a>
                 </div>
-                <div class="col-sm-9 ">
+                <div class="col-sm-9 shadow">
                     <h5 class="empresa"><b>Centro de Interacción Multimedia (Apex)</b></h5>
                     <h6 class="puesto"><b>Representante de Atención al Cliente CLARO-Soporte Técnico</b></h6>
                     <span class="periodo">  Enero 2009 - Septiembre 2017 </span>
@@ -112,132 +118,330 @@
                     <p class="descripción ">Soporte técnico sobre servicios de telefonía celular e internet móvil vía telefónica y por e-mail. Gestión de analisis de e-mails entrantes, carga de datos en planillas y sistemas, actualización de datos, etc. Sistema backoffice asistiendo
                         a clientes masivos y corporativos de Argentina, Uruguay y Paraguay de la empresa de telefonía móvil CLARO.</p>
                 </div>
-                <div class="card mat-card shadow"></div>
-                <div class="row"></div>
-                <div class="col-sm-3"> Imagen<a href="https://hospital-materno-neonatal.negocio.site/?utm_source=gmb&utm_medium=referral">HospitalMaternoNeonatal</a></div>
-                <div class="col-sm-9">
+            </div>
+            <div class="d-flex align-items-stretch">
+                <div class="col-sm-3">
+                    <!--<a href="https://hospital-materno-neonatal.negocio.site/?utm_source=gmb&utm_medium=referral">HospitalMaternoNeonatal</a>-->
+                </div>
+                <div class="col-sm-9 shadow">
                     <h5 class="empresa"><b>Hospital Materno Neonatal "Ministro Dr. Ramón Carrillo"</b></h5>
                     <h6 class="puesto"><b>Técnica de Laboratorio Clínico e Histopatológico</b></h6>
                     <span class="periodo">Enero 2003 - Enero 2004 (Jornada completa/Practica profesional)</span>
                     <p class="descripción">Realice análisis clínicos en el área de citología, química y serología con técnicas manuales y con aparatología (contador hematológico, espectrofotometro, etc.) con sus respectivos registros.</p>
                 </div>
             </div>
+        </div>
+        </div>
     </section>
     <section id="educacion">
-        <div class="card mat-card shadow">
+        <div class="card mat-card">
             <div class="row">
-                <div class="btn-edit "><a class="btn-edit " href="# "><i class='bx bxs-edit-alt' ></i><i class='bx bx-trash' ></i></a></div>
+                <div class="btn-edit "><a class="btn-edit " href="#educacion"><i class='bx bxs-edit-alt' ></i><i class='bx bx-trash' ></i></a></div>
                 <!--<div class="btn-edit "><a class="btn-edit " href="# "><i class='bx bxs-edit-alt' ><i class='bx bx-trash' ></i></i></a></div>-->
                 <div class="col-sm-12">
                     <h4>Educación</h4>
                 </div>
-                <div class="col-sm-3">
-                    <li>
+                <div class="d-flex align-items-stretch">
+                    <div class="col-sm-3">
                         <img class="logoEstudio " src="images/Logos/UNC.png " alt="logo Universidad Nacional de Córdoba ">
-                    </li>
-                    <li>
+                    </div>
+                    <div class="col-sm-9 shadow">
+                        <h5 class="institución"><b>Universidad Nacional de Córdoba - Escuela de Tecnología Médica</b></h5>
+                        <h6 class="titulo">Técnico de Laboratorio Clínico e Histopatológico</h6>
+                        <span class="periodo">2001-2004</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-stretch">
+                    <div class="col-sm-3">
                         <img class="logoEstudio " src="images/Logos/William C Morris.png " alt="logo Instituto William C. Morris ">
-                        <li>
-                            <img class="logoEstudio " src="images/Logos/logoArgProg (287x287).jpg " alt="Logo Atgentina Programa ">
-                        </li>
-                        <li>
-                            <img class="logoEstudio " src="images/Logos/logoArgProg (287x287).jpg " alt="Logo Atgentina Programa ">
-                        </li>
+                    </div>
+                    <div class="col-sm-9 shadow">
+                        <h5 class="institución"><b>Instituto William C. Morris</b></h5>
+                        <h6 class="titulo">Perito Mercantil Nivel Secundario - Cap. Fed.,Bs As.</h6>
+                        <span class="periodo">1990-1994</span>
+                    </div>
                 </div>
-                <div class="col-sm-9 shadow ">
-                    <ul class="educación">
-                        <li class="shadow">
-                            <h5 class="institución"><b>Universidad Nacional de Córdoba - Escuela de Tecnología Médica</b></h5>
-                            <h6 class="titulo">Técnico de Laboratorio Clínico e Histopatológico</h6>
-                            <span class="periodo">2001-2004</span>
-                        </li>
-                        <li class="shadow">
-                            <h5 class="institución"><b>Instituto William C. Morris</b></h5>
-                            <h6 class="titulo">Perito Mercantil Nivel Secundario - Cap. Fed.,Bs As.</h6>
-                            <span class="periodo">1990-1994</span>
-                        </li>
-                        <li class="shadow">
-                            <h5 class="institución"><b>Argentina Programa</b></h5>
-                            <h6 class="titulo">Desarrollador Web Full Stack - Se Programar</h6>
-                            <span class="periodo">Octubre - Diciembre 2021</span>
-                        </li>
-                        <li class="shadow">
-                            <h5 class="institución"><b>Argentina Programa</b></h5>
-                            <h6 class="titulo">Desarrollador Web Full Stack - Yo Programo</h6>
-                            <span class="periodo">  Febrero - Agosto 2022</span>
-                        </li>
-                    </ul>
+                <div class="d-flex align-items-stretch">
+                    <div class="col-sm-3">
+                        <img class="logoEstudio " src="images/Logos/logoArgProg (287x287).jpg " alt="Logo Atgentina Programa ">
+                    </div>
+                    <div class="col-sm-9 shadow">
+                        <h5 class="institución"><b>Argentina Programa</b></h5>
+                        <h6 class="titulo">Desarrollador Web Full Stack - Se Programar</h6>
+                        <span class="periodo">Octubre - Diciembre 2021</span>
+                    </div>
                 </div>
+                <div class="d-flex align-items-stretch">
+                    <div class="col-sm-3">
+                        <img class="logoEstudio " src="images/Logos/logoArgProg (287x287).jpg " alt="Logo Atgentina Programa ">
+                    </div>
+                    <div class="col-sm-9 shadow">
+                        <h5 class="institución"><b>Argentina Programa</b></h5>
+                        <h6 class="titulo">Desarrollador Web Full Stack - Yo Programo</h6>
+                        <span class="periodo">  Febrero - Agosto 2022</span>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section id="skills">
         <div class="card mat-card shadow">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="btn-edit "><a class="btn-edit " href="# "><i class='bx bxs-edit-alt' ></i><i class='bx bx-trash' ></i></a></div>
+                    <div class="btn-edit "><a class="btn-edit " href="#skills"><i class='bx bxs-edit-alt' ></i><i class='bx bx-trash' ></i></a></div>
                     <h4>Skills</h4>
                 </div>
-
-                <div class="col-sm-3 ">
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/Logo html.jpg" alt="Logo HTML">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/Logo c s s.jpg" alt="Logo CSS">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/Logo Bootstrap.jpg" alt="Logo Bootstrap">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/Logo Git Hb.jpg" alt="Logo Git Hub">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/Logo Js.jpg" alt="Logo Javascript">
-                    <img class="logoSkill" src="" alt="Logo Typescript">
-                    <img class="logoSkill" src="images/Logos/Logo Angular.jpg" alt="Logo Angular ">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <img class="logoSkill" src="images/Logos/TS logo.png" alt="Logo Typescript">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <img class="logoSkill" src="images/Logos/Logo Angular.jpg" alt="Logo Angular">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/Logo Java.jpg" alt="Logo Java">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/Logo Node js.jpg" alt="Logo Node js ">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/logo srping boot.png" alt="Logo SpringBoot ">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/logo MySQL.png" alt="Logo MySQL">
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
+                    </div>
+                </div>
+                <div class="col-sm-1">
                     <img class="logoSkill" src="images/Logos/Logo VSC.jpg" alt="Logo VSC">
                 </div>
-                <div class="col-sm-9 ">
-                    <!--<div class="btn-edit "><a class="btn-edit " href="# "><i class='bx bxs-edit-alt' ><i class='bx bx-trash' ></i></i></a></div>-->
-
-                    <div class="progress ">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated " style="width:70% ">HTML</div>
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbasico" value="basico">
+                        <label class="form-check-label" for="inlineCheckbasico">Básico</label>
                     </div>
-                    <br>
-                    <div class="progress ">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated " style="width:60% ">CSS</div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckintermedio" value="intermedio">
+                        <label class="form-check-label" for="inlineCheckintermedio">Intermedio</label>
                     </div>
-                    <br>
-                    <div class="progress ">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated " style="width:60% ">Bootstrap</div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckexperimentado" value="experimentado">
+                        <label class="form-check-label" for="inlineCheckexperimentado">Experimentado</label>
                     </div>
-                    <br>
-                    <div class="progress ">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated " style="width:50% ">Javascript</div>
-                    </div>
-                    <br>
-                    <div class="progress ">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated " style="width:60% ">Java</div>
-                    </div>
-                    <h6>Soft Skills</h6>
-                    <ul>
-                        <li>Buena Comunicación</li><br>
-                        <li>Adaptación</li><br>
-                        <li>Responsabilidad</li> <br>
-                        <li>Trabajo en equipo</li> <br>
-                        <li>Sólida ética laboral</li><br>
-                    </ul>
                 </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <h4>Soft Skills</h4>
+            <div class="row">
+                <div class="d-flex justify-content-evenly">
+                    <p>Buena Comunicación</p>
+                    <p>Adaptación</p>
+                    <p>Trabajo en equipo</p>
+                    <p>Responsabilidad</p>
+                    <p>Sólida ética laboral</p>
+                    <p>Capacidad de análisis</p>
+                    <p>Idioma Inglés básico</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
     <section id="proyectos">
         <div class="card mat-card shadow">
             <div class=row>
-                <div class="col-sm-3 ">Todavia por subir</div>
-                <div class="col-sm-9 ">todavia por subir</div>
+                <div class="btn-edit "><a class="btn-edit " href="#proyectos"><i class='bx bxs-edit-alt' ></i><i class='bx bx-trash' ></i></a></div>
+                <div class="col-sm-12 ">Todavia por subir</div>
             </div>
     </section>
-    <footer>
-        <section id="contacto" class="shadow">Agregar Contacto </section>
-
-        <div class="container">
-            <p id="copyright">Copyright &copy; 2022 Ruth Sordián</p>
-        </div>
+    <footer id="contacto">
+        <a href="#">
+            <h4>Contactáme</h4>
+        </a>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <form id="formulario" action="http" method="post">
+                    <label for="userName">Ingrese su nombre</label>
+                    <input class="form-control mb-2" type="text" id="userName" name="userName">
+                    <label for="userEmail">Ingrese su correo</label>
+                    <input class="form-control mb-2" type="email" id="userEmail" name="userEmail">
+                    <button class="btn btn-primary">Enviar</button type="submit">
+        </form>
+    </div>
+    </div>
+                <div class="col-sm-12">
+                    <div id="copyright">Copyright &copy; 2022 Ruth Sordián</div>
+                </div>
+            </div>
     </footer>
+    <script src="script/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
