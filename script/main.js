@@ -7,6 +7,11 @@ function cambiar_parrafo() {
 function myFunction(valor) {
     document.getElementById("text-acercade").innerText = valor;
 };
+
+function logMessage(message) {
+    console.log(message + "<br>");
+}
+
 //controla si se presina un enter
 let textarea = document.getElementById("edit-acercade")
 textarea.addEventListener('keyup', (e) => {
@@ -34,7 +39,8 @@ function showFile(input) {
     };
 }
 
-var modal = document.getElementById('id01');
+
+let modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
